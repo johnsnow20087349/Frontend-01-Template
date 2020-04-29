@@ -49,4 +49,52 @@
 * 'abc' 单引号
 * \`abc\` 反引号
 
+### JavaScript 构成
+* Atom 原子性
+* Expression 表达式语法
+* Statement 声明式语法
+* Structure 结构
+* Program/Module 项目/模块
+
+#### Atom
+##### 语法
+* 简单语句
+    * Expression Statement 表达式语句
+    * Empty Statement 空语句
+    * Debugger Statement 调试模式语句
+    * Throw Statement 抛异常语句
+    * Continue Statement 继续执行语句
+    * Break Statement 中断执行语句
+    * Return Statement 返回语句
+* 组合语句
+    * Block Statement 块语句
+    * If Statement if 条件判断语句
+    * Switch Statement switch 条件判断语句
+    * Iteration Statement 迭代语句
+    * With Statement with 语句
+    * Labelled Statement 标签化语句
+    * Try Statement try 异常语句
+* 声明
+    * Function Declaration 函数声明
+    * Generator Declaration 生成器声明
+    * Async Function Declaration 异步函数声明
+    * Async Generator Declaration 异步生成器声明
+    * Variable Declaration 变量声明
+    * Class Declaration 类声明
+    * Lexical Declaration 词法声明
+#### 运行时
+* Completion Record 完成时记录
+    * [[type]]: normal, break, continue, return, or throw
+    * [[value]]: Types
+    * [[target]]: label
+* Lexical Environment 词法环境
+
+## Object In JavaScript
+在 JavaScript 运行时，原生对象的描述只需要关注`原型`和`属性`两个部分
+
+### Object 包括
+* Function Object 函数对象
+* Special Object 特殊对象，包括Array, Object.prototype
+* Host Object 宿主对象 
+
 
