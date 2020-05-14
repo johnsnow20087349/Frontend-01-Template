@@ -50,6 +50,9 @@ const client = net.createConnection({
         host: '127.0.0.1',
         path: '/',
         port: 8088,
+        headers: {
+            'X-Foo2': 'custom'
+        },
         body: {
             name: 'winter'
         }
